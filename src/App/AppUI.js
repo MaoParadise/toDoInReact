@@ -7,6 +7,7 @@ import { CreateTodoButton } from '../components/CreateTodoButton/CreateTodoButto
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../components/modal/Modal";
 import { TodoForm } from "../components/TodoForm/TodoForm";
+import { LoadingTodos } from "../components/loadingTodos/LoadingTodos";
 
 const AppUI = () =>{
 
@@ -29,8 +30,11 @@ const AppUI = () =>{
           <TodoList>
 
           {error && <p> Desesperate, hubo un error </p>}
-          {loading && <p> Estamos cargando, no desesperes... </p>}
-          {(!loading && !searchedTodos.length) && <p> CREA TU PRIMER TO DO </p>}
+          {loading && 
+            new Array(4).fill().map((item, index)=>(
+              <LoadingTodos key={index} />
+          ))}
+          {(!loading && !searchedTodos.length) && <h2> CREA TU PRIMER TO DO </h2>}
   
   
   
