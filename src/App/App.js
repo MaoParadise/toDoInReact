@@ -12,7 +12,7 @@ import { TodoProvider } from "../TodoContext";
      completed: true
    },
    {
-     text: 'hacer ejercicio',
+     text: 'hacer tareas varias',
      completed: false
    },
    {
@@ -20,7 +20,7 @@ import { TodoProvider } from "../TodoContext";
     completed: true
    }
  ];
-
+ 
 
 
 function App() {
