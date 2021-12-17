@@ -1,5 +1,6 @@
 .TodoItem {
-    background-color: #FAFAFA;
+    background-color: rgb(238, 198, 67);
+    border: solid 2px #000;
     position: relative;
     display: flex;
     justify-content: center;
@@ -15,6 +16,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    text-align: center;
   }
   .TodoItem-p--complete {
     text-decoration: line-through;
@@ -34,6 +36,7 @@
   
   .Icon-check {
     position: absolute;
+    font-weight: bold;
     left: 12px;
   }
   .Icon-check--active {
@@ -42,7 +45,7 @@
   
   .Icon-delete {
     position: absolute;
-    top: -24px;
+    top: 20%;
     right: 0;
   }
   .Icon-delete:hover {

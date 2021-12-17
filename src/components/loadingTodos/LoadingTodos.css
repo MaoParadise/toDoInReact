@@ -1,6 +1,6 @@
 .TodoLoading {
     animation: gradient 2s ease infinite;
-    background: linear-gradient(-45deg, #FAFAFA, #e6e6e6, #FAFAFA, #e6e6e6);
+    background: linear-gradient(-45deg, rgb(238, 198, 67), rgb(255, 198, 9), rgb(238, 198, 67), rgb(255, 198, 9));
     position: relative;
     display: flex;
     justify-content: center;
@@ -30,6 +30,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    text-align: center;
   }
   .TodoLoading-p--complete {
     text-decoration: line-through;
@@ -57,7 +58,7 @@
   
   .Icon-delete {
     position: absolute;
-    top: -24px;
+    top: 20%;
     right: 0;
   }
   .Icon-delete:hover {

@@ -18,6 +18,7 @@
     z-index: 1;
     transform: rotate(0);
     transition: .3s ease;
+    border: 2px solid #000;
   }
   
   .CreateTodoButton:hover {

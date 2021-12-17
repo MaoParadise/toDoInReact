@@ -27,7 +27,9 @@ const AppUI = () =>{
       <TodoCounter/> 
       
       <TodoSearch />
-          <TodoList>
+
+      
+      <TodoList>
 
           {error && <p> Desesperate, hubo un error </p>}
           {loading && 
